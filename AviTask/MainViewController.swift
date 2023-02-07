@@ -20,6 +20,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = mainView
+   
         mainView.tableView.delegate = self
         mainView.tableView.dataSource = self
         
@@ -30,13 +31,17 @@ class MainViewController: UIViewController {
                 
                 guard let self else {return}
                 self.employerArray = values
+                let sortedArray = self.employerArray.sorted(by: {$0.name < $1.name})
+                self.employerArray = sortedArray
                 self.mainView.tableView.reloadData()
-                print(self.employerArray.count)
+                
                 
             }
             
             
         }
+        
+        
         
     }
 }
@@ -80,6 +85,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MainCell.reuseId, for: indexPath) as! MainCell
         let employer = employerArray[indexPath.row]
+        
         cell.name.text = employer.name
         cell.phoneNumber.text = employer.phoneNumber
         cell.skills.text = employer.skills.joined(separator: " , ")

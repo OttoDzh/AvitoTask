@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1CBCD3299161BC00A81392 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1CBCD2299161BC00A81392 /* NetworkManager.swift */; };
 		FB9ED8BB2989B81E00ED8309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ED8BA2989B81E00ED8309 /* AppDelegate.swift */; };
 		FB9ED8BD2989B81E00ED8309 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ED8BC2989B81E00ED8309 /* SceneDelegate.swift */; };
 		FB9ED8BF2989B81E00ED8309 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ED8BE2989B81E00ED8309 /* MainViewController.swift */; };
@@ -21,11 +22,13 @@
 		FB9ED8DE2989B93600ED8309 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ED8D62989B93600ED8309 /* Helper.swift */; };
 		FB9ED8DF2989B93600ED8309 /* ViewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ED8D72989B93600ED8309 /* ViewSettings.swift */; };
 		FB9ED8E4298C14F000ED8309 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ED8E3298C14F000ED8309 /* MainCell.swift */; };
+		FBE840572992D82C00F47875 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE840562992D82C00F47875 /* Reachability.swift */; };
 		FBEB7923298D6CF200474B29 /* AviTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB7922298D6CF200474B29 /* AviTask.swift */; };
 		FBFE0FDD298FB77700D152D7 /* ODFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE0FDC298FB77700D152D7 /* ODFonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB1CBCD2299161BC00A81392 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FB9ED8B72989B81E00ED8309 /* AviTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AviTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9ED8BA2989B81E00ED8309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB9ED8BC2989B81E00ED8309 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		FB9ED8D62989B93600ED8309 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		FB9ED8D72989B93600ED8309 /* ViewSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSettings.swift; sourceTree = "<group>"; };
 		FB9ED8E3298C14F000ED8309 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		FBE840562992D82C00F47875 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		FBEB7922298D6CF200474B29 /* AviTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviTask.swift; sourceTree = "<group>"; };
 		FBFE0FDC298FB77700D152D7 /* ODFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ODFonts.swift; path = ../../../easyWay/ODFonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +84,8 @@
 				FB9ED8BA2989B81E00ED8309 /* AppDelegate.swift */,
 				FB9ED8BC2989B81E00ED8309 /* SceneDelegate.swift */,
 				FB9ED8BE2989B81E00ED8309 /* MainViewController.swift */,
+				FB1CBCD2299161BC00A81392 /* NetworkManager.swift */,
+				FBE840562992D82C00F47875 /* Reachability.swift */,
 				FB9ED8CE2989B87700ED8309 /* MainView.swift */,
 				FB9ED8E3298C14F000ED8309 /* MainCell.swift */,
 				FBEB7922298D6CF200474B29 /* AviTask.swift */,
@@ -187,7 +193,9 @@
 				FB9ED8E4298C14F000ED8309 /* MainCell.swift in Sources */,
 				FB9ED8CF2989B87700ED8309 /* MainView.swift in Sources */,
 				FB9ED8BB2989B81E00ED8309 /* AppDelegate.swift in Sources */,
+				FB1CBCD3299161BC00A81392 /* NetworkManager.swift in Sources */,
 				FB9ED8BD2989B81E00ED8309 /* SceneDelegate.swift in Sources */,
+				FBE840572992D82C00F47875 /* Reachability.swift in Sources */,
 				FB9ED8DD2989B93600ED8309 /* StackViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
