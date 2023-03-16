@@ -19,16 +19,16 @@ class MainView: UIView {
         setupViews()
         setupConstraints()
     }
-    
-    
+  
     func setupViews() {
         backgroundColor = .lightGray
         tableView.separatorStyle = .singleLine
         tableView.register(MainCell.self, forCellReuseIdentifier: MainCell.reuseId)
         tableView.layer.cornerRadius = 15
         tableView.separatorStyle = .singleLine
+        tableView.backgroundColor = .white
     }
-    
+  
     func setupConstraints() {
         addSubview(tableView)
         addSubview(companyNameLabel)
@@ -46,7 +46,6 @@ class MainView: UIView {
                                      employeLabel.leadingAnchor.constraint(equalTo: leadingAnchor,constant: 10),
                                      skillsLabel.topAnchor.constraint(equalTo: employeLabel.topAnchor),
                                      skillsLabel.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -96)])
-        
     }
     
     required init?(coder: NSCoder) {
